@@ -1,0 +1,10 @@
+// Шаблон для подключения шрифтов
+
+@font-face {
+  font-family: '';
+  font-style: normal;
+  src: url('../fonts/') format('woff'),
+       url('../fonts/') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
