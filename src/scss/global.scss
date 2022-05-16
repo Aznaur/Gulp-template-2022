@@ -1,1 +1,13 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
