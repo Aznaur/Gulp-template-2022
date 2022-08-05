@@ -10,6 +10,7 @@ import rename from 'gulp-rename';
 import del from 'del';
 import webp from 'gulp-webp';
 import newer from 'gulp-newer';
+import rigger from 'gulp-rigger';
 
 export const plugins = {
     gulp: gulp,
@@ -23,5 +24,6 @@ export const plugins = {
     rename: rename,
     del: del,
     webp: webp,
-    newer: newer
+    newer: newer,
+    rigger: rigger
 }

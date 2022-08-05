@@ -14,6 +14,7 @@ import { images } from './task/image.js';
 import { webp } from './task/webp.js';
 import { copy } from './task/copy.js';
 import { fonts } from './task/fonts.js';
+import { rigger } from './task/rigger.js';
 
 // Глобальная переменная
 global.app = {
@@ -25,6 +26,7 @@ global.app = {
 // Наблюдатель
 const watcher = () => {
     gulp.watch(app.path.src.html).on("change", app.plugins.bs.reload);
+    gulp.watch(app.path.src.riggerWatch, rigger);
     gulp.watch(app.path.src.scss, css);
 }
 
@@ -40,8 +42,9 @@ export { images};
 export { webp };
 export { copy };
 export { fonts };
+export { rigger };
 
 
-export const base = gulp.parallel(css);
+export const base = gulp.parallel(css, rigger);
 export const build = gulp.series(clear, html, base);
 export default gulp.series(develop, base, gulp.parallel(watcher, server));

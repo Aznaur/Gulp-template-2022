@@ -10,6 +10,8 @@ export const path =  {
         img: 'src/img/**/*.{jpg,png,jpeg,webp,svg}',
         webp: 'src/img/**/*.{jpg,png,jpeg,webp}',
         fonts: 'src/fonts/',
+        rigger: 'src/html/*.html',
+        riggerWatch: 'src/html/**/*.html',
         assets: ['src/fonts/**/*.ttf', 'src/icons/**/*.*']
     },
 
